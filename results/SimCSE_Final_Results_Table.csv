@@ -1,0 +1,8 @@
+experiment,model_name,checkpoint,num_stsb_pairs,num_positive_pairs,positive_threshold,num_unique_sentences,sts_b_spearman,alignment,uniformity,sts_b_percent
+raw_BERT,bert-base-uncased,bert-base-uncased,1500,208,4.0,2910,0.301829307671462,0.1771129220724105,-1.056027804899352,30.1829307671462
+SimCSE_50K,bert-base-uncased,experiments\reduced_50k\20260818_121443\checkpoint\epoch_1\training_state.pt,1500,208,4.0,2910,0.6907042079790717,0.2923553884029388,-2.570531467405732,69.07042079790718
+no_dropout,bert-base-uncased,experiments\dropout_no_dropout_50k\20260818_235440\checkpoint\epoch_1\training_state.pt,1500,208,4.0,2910,0.6020823188828407,0.4485884308815002,-2.7144205684247424,60.20823188828407
+fixed_mask_0.10,bert-base-uncased,experiments\dropout_fixed_mask_50k\20260819_055050\checkpoint\epoch_1\training_state.pt,1500,208,4.0,2910,0.4106706513705611,0.4057426750659942,-2.3717829851652024,41.067065137056105
+dropout_0.20,bert-base-uncased,experiments\dropout_020_50k\20260819_153016\checkpoint\epoch_1\training_state.pt,1500,208,4.0,2910,0.7637891614406891,0.1945705413818359,-2.3813577108445827,76.37891614406891
+temperature_0.01,bert-base-uncased,experiments\temperature_001_50k\20260819_214835\checkpoint\epoch_1\training_state.pt,1500,208,4.0,2910,0.6887822843322958,0.1641584038734436,-1.5738418747705265,68.87822843322958
+temperature_1.00,bert-base-uncased,experiments\temperature_100_50k\20260820_042041\checkpoint\epoch_1\training_state.pt,1500,208,4.0,2910,0.5832913895616162,0.1030159667134285,-1.9328555081609975,58.32913895616162

@@ -1,0 +1,10 @@
+A dog is running.
+A woman is reading a book.
+The weather is sunny today.
+The cat is sleeping on the sofa.
+Natural language processing studies language with computers.
+Machine learning models learn patterns from data.
+The Earth revolves around the Sun.
+Paris is the capital of France.
+The student is studying for an examination.
+Transformers are neural network architectures.

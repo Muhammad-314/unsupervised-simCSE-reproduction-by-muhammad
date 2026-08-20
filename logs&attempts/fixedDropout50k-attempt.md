@@ -1,0 +1,890 @@
+(simcse-reproduction) D:\CODING\Paper Reproduction\simcse-reproduction>python src/train_ablations.py --config configs/dropout_fixed_mask.yaml --max-sentences 50000 --experiment-name dropout_fixed_mask_50k
+
+======================================================================
+SIMCSE TRAINING
+======================================================================
+Experiment directory: experiments\dropout_fixed_mask_50k\20260819_055050
+Device: cpu
+
+Configuration:
+experiment_name: dropout_fixed_mask_50k
+model_name: bert-base-uncased
+mlp_only_train: True
+dataset_path: data/raw/wiki1m_for_simcse.txt
+max_seq_length: 32
+batch_size: 64
+learning_rate: 3e-05
+epochs: 1
+temperature: 0.05
+dropout: 0.1
+fixed_dropout_mask: True
+max_grad_norm: 1.0
+seed: 42
+shuffle: True
+drop_last: True
+num_workers: 0
+target_reference: {'official_model': 'princeton-nlp/unsup-simcse-bert-base-uncased', 'reported_average_sts': 76.25}
+
+Command-line sentence limit:
+50000
+
+Loading tokenizer...
+
+Loading dataset...
+Number of sentences: 50000
+Number of batches per epoch: 781
+
+Loading model...
+
+Total training steps: 781
+Warmup steps: 0
+Initial learning rate: 3e-05
+
+======================================================================
+STARTING TRAINING
+======================================================================
+Epoch 1/1 | Step 0001/0781 | Loss 0.151787 | PosSim 1.000000 | NegSim 0.593544 | LR 0.00002996
+Epoch 1/1 | Step 0002/0781 | Loss 0.001581 | PosSim 1.000000 | NegSim 0.373682 | LR 0.00002992
+Epoch 1/1 | Step 0003/0781 | Loss 0.001068 | PosSim 1.000000 | NegSim 0.312140 | LR 0.00002988
+Epoch 1/1 | Step 0004/0781 | Loss 0.000469 | PosSim 1.000000 | NegSim 0.331201 | LR 0.00002985
+Epoch 1/1 | Step 0005/0781 | Loss 0.000380 | PosSim 1.000000 | NegSim 0.305937 | LR 0.00002981
+Epoch 1/1 | Step 0006/0781 | Loss 0.000264 | PosSim 1.000000 | NegSim 0.303281 | LR 0.00002977
+Epoch 1/1 | Step 0007/0781 | Loss 0.000281 | PosSim 1.000000 | NegSim 0.289924 | LR 0.00002973
+Epoch 1/1 | Step 0008/0781 | Loss 0.000287 | PosSim 1.000000 | NegSim 0.294447 | LR 0.00002969
+Epoch 1/1 | Step 0009/0781 | Loss 0.000140 | PosSim 1.000000 | NegSim 0.277528 | LR 0.00002965
+Epoch 1/1 | Step 0010/0781 | Loss 0.000177 | PosSim 1.000000 | NegSim 0.265887 | LR 0.00002962
+Epoch 1/1 | Step 0011/0781 | Loss 0.000154 | PosSim 1.000000 | NegSim 0.269264 | LR 0.00002958
+Epoch 1/1 | Step 0012/0781 | Loss 0.000538 | PosSim 1.000000 | NegSim 0.251244 | LR 0.00002954
+Epoch 1/1 | Step 0013/0781 | Loss 0.000062 | PosSim 1.000000 | NegSim 0.233579 | LR 0.00002950
+Epoch 1/1 | Step 0014/0781 | Loss 0.000069 | PosSim 1.000000 | NegSim 0.236010 | LR 0.00002946
+Epoch 1/1 | Step 0015/0781 | Loss 0.000073 | PosSim 1.000000 | NegSim 0.218884 | LR 0.00002942
+Epoch 1/1 | Step 0016/0781 | Loss 0.000072 | PosSim 1.000000 | NegSim 0.222587 | LR 0.00002939
+Epoch 1/1 | Step 0017/0781 | Loss 0.000044 | PosSim 1.000000 | NegSim 0.210547 | LR 0.00002935
+Epoch 1/1 | Step 0018/0781 | Loss 0.000056 | PosSim 1.000000 | NegSim 0.200103 | LR 0.00002931
+Epoch 1/1 | Step 0019/0781 | Loss 0.000049 | PosSim 1.000000 | NegSim 0.198641 | LR 0.00002927
+Epoch 1/1 | Step 0020/0781 | Loss 0.000030 | PosSim 1.000000 | NegSim 0.180831 | LR 0.00002923
+Epoch 1/1 | Step 0021/0781 | Loss 0.000024 | PosSim 1.000000 | NegSim 0.181303 | LR 0.00002919
+Epoch 1/1 | Step 0022/0781 | Loss 0.000020 | PosSim 1.000000 | NegSim 0.172944 | LR 0.00002915
+Epoch 1/1 | Step 0023/0781 | Loss 0.000043 | PosSim 1.000000 | NegSim 0.162657 | LR 0.00002912
+Epoch 1/1 | Step 0024/0781 | Loss 0.000019 | PosSim 1.000000 | NegSim 0.174381 | LR 0.00002908
+Epoch 1/1 | Step 0025/0781 | Loss 0.000046 | PosSim 1.000000 | NegSim 0.171337 | LR 0.00002904
+Epoch 1/1 | Step 0026/0781 | Loss 0.000016 | PosSim 1.000000 | NegSim 0.150274 | LR 0.00002900
+Epoch 1/1 | Step 0027/0781 | Loss 0.000027 | PosSim 1.000000 | NegSim 0.146849 | LR 0.00002896
+Epoch 1/1 | Step 0028/0781 | Loss 0.000010 | PosSim 1.000000 | NegSim 0.153254 | LR 0.00002892
+Epoch 1/1 | Step 0029/0781 | Loss 0.000021 | PosSim 1.000000 | NegSim 0.140613 | LR 0.00002889
+Epoch 1/1 | Step 0030/0781 | Loss 0.000015 | PosSim 1.000000 | NegSim 0.150309 | LR 0.00002885
+Epoch 1/1 | Step 0031/0781 | Loss 0.000013 | PosSim 1.000000 | NegSim 0.147482 | LR 0.00002881
+Epoch 1/1 | Step 0032/0781 | Loss 0.000011 | PosSim 1.000000 | NegSim 0.139179 | LR 0.00002877
+Epoch 1/1 | Step 0033/0781 | Loss 0.000018 | PosSim 1.000000 | NegSim 0.138495 | LR 0.00002873
+Epoch 1/1 | Step 0034/0781 | Loss 0.000155 | PosSim 1.000000 | NegSim 0.135943 | LR 0.00002869
+Epoch 1/1 | Step 0035/0781 | Loss 0.000021 | PosSim 1.000000 | NegSim 0.132960 | LR 0.00002866
+Epoch 1/1 | Step 0036/0781 | Loss 0.000011 | PosSim 1.000000 | NegSim 0.132884 | LR 0.00002862
+Epoch 1/1 | Step 0037/0781 | Loss 0.000024 | PosSim 1.000000 | NegSim 0.135693 | LR 0.00002858
+Epoch 1/1 | Step 0038/0781 | Loss 0.000015 | PosSim 1.000000 | NegSim 0.122720 | LR 0.00002854
+Epoch 1/1 | Step 0039/0781 | Loss 0.000007 | PosSim 1.000000 | NegSim 0.125695 | LR 0.00002850
+Epoch 1/1 | Step 0040/0781 | Loss 0.000009 | PosSim 1.000000 | NegSim 0.123185 | LR 0.00002846
+Epoch 1/1 | Step 0041/0781 | Loss 0.000008 | PosSim 1.000000 | NegSim 0.119151 | LR 0.00002843
+Epoch 1/1 | Step 0042/0781 | Loss 0.000020 | PosSim 1.000000 | NegSim 0.114628 | LR 0.00002839
+Epoch 1/1 | Step 0043/0781 | Loss 0.000010 | PosSim 1.000000 | NegSim 0.110920 | LR 0.00002835
+Epoch 1/1 | Step 0044/0781 | Loss 0.000011 | PosSim 1.000000 | NegSim 0.119551 | LR 0.00002831
+Epoch 1/1 | Step 0045/0781 | Loss 0.000016 | PosSim 1.000000 | NegSim 0.111174 | LR 0.00002827
+Epoch 1/1 | Step 0046/0781 | Loss 0.000008 | PosSim 1.000000 | NegSim 0.114927 | LR 0.00002823
+Epoch 1/1 | Step 0047/0781 | Loss 0.000007 | PosSim 1.000000 | NegSim 0.111280 | LR 0.00002819
+Epoch 1/1 | Step 0048/0781 | Loss 0.000011 | PosSim 1.000000 | NegSim 0.121659 | LR 0.00002816
+Epoch 1/1 | Step 0049/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.109516 | LR 0.00002812
+Epoch 1/1 | Step 0050/0781 | Loss 0.000020 | PosSim 1.000000 | NegSim 0.121158 | LR 0.00002808
+Epoch 1/1 | Step 0051/0781 | Loss 0.000009 | PosSim 1.000000 | NegSim 0.112748 | LR 0.00002804
+Epoch 1/1 | Step 0052/0781 | Loss 0.000007 | PosSim 1.000000 | NegSim 0.121425 | LR 0.00002800
+Epoch 1/1 | Step 0053/0781 | Loss 0.000008 | PosSim 1.000000 | NegSim 0.117158 | LR 0.00002796
+Epoch 1/1 | Step 0054/0781 | Loss 0.000106 | PosSim 1.000000 | NegSim 0.108281 | LR 0.00002793
+Epoch 1/1 | Step 0055/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.113017 | LR 0.00002789
+Epoch 1/1 | Step 0056/0781 | Loss 0.000024 | PosSim 1.000000 | NegSim 0.106220 | LR 0.00002785
+Epoch 1/1 | Step 0057/0781 | Loss 0.000019 | PosSim 1.000000 | NegSim 0.106389 | LR 0.00002781
+Epoch 1/1 | Step 0058/0781 | Loss 0.000011 | PosSim 1.000000 | NegSim 0.112366 | LR 0.00002777
+Epoch 1/1 | Step 0059/0781 | Loss 0.000027 | PosSim 1.000000 | NegSim 0.108672 | LR 0.00002773
+Epoch 1/1 | Step 0060/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.103164 | LR 0.00002770
+Epoch 1/1 | Step 0061/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.107812 | LR 0.00002766
+Epoch 1/1 | Step 0062/0781 | Loss 0.000007 | PosSim 1.000000 | NegSim 0.107575 | LR 0.00002762
+Epoch 1/1 | Step 0063/0781 | Loss 0.000021 | PosSim 1.000000 | NegSim 0.107644 | LR 0.00002758
+Epoch 1/1 | Step 0064/0781 | Loss 0.000011 | PosSim 1.000000 | NegSim 0.104341 | LR 0.00002754
+Epoch 1/1 | Step 0065/0781 | Loss 0.000038 | PosSim 1.000000 | NegSim 0.105641 | LR 0.00002750
+Epoch 1/1 | Step 0066/0781 | Loss 0.000010 | PosSim 1.000000 | NegSim 0.105495 | LR 0.00002746
+Epoch 1/1 | Step 0067/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.107979 | LR 0.00002743
+Epoch 1/1 | Step 0068/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.094171 | LR 0.00002739
+Epoch 1/1 | Step 0069/0781 | Loss 0.000137 | PosSim 1.000000 | NegSim 0.101261 | LR 0.00002735
+Epoch 1/1 | Step 0070/0781 | Loss 0.000008 | PosSim 1.000000 | NegSim 0.112836 | LR 0.00002731
+Epoch 1/1 | Step 0071/0781 | Loss 0.000007 | PosSim 1.000000 | NegSim 0.104181 | LR 0.00002727
+Epoch 1/1 | Step 0072/0781 | Loss 0.000013 | PosSim 1.000000 | NegSim 0.103052 | LR 0.00002723
+Epoch 1/1 | Step 0073/0781 | Loss 0.000013 | PosSim 1.000000 | NegSim 0.106938 | LR 0.00002720
+Epoch 1/1 | Step 0074/0781 | Loss 0.000016 | PosSim 1.000000 | NegSim 0.096895 | LR 0.00002716
+Epoch 1/1 | Step 0075/0781 | Loss 0.000012 | PosSim 1.000000 | NegSim 0.104371 | LR 0.00002712
+Epoch 1/1 | Step 0076/0781 | Loss 0.000010 | PosSim 1.000000 | NegSim 0.093127 | LR 0.00002708
+Epoch 1/1 | Step 0077/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.100720 | LR 0.00002704
+Epoch 1/1 | Step 0078/0781 | Loss 0.000016 | PosSim 1.000000 | NegSim 0.098359 | LR 0.00002700
+Epoch 1/1 | Step 0079/0781 | Loss 0.000010 | PosSim 1.000000 | NegSim 0.093219 | LR 0.00002697
+Epoch 1/1 | Step 0080/0781 | Loss 0.000023 | PosSim 1.000000 | NegSim 0.095371 | LR 0.00002693
+Epoch 1/1 | Step 0081/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.094083 | LR 0.00002689
+Epoch 1/1 | Step 0082/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.097691 | LR 0.00002685
+Epoch 1/1 | Step 0083/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.090979 | LR 0.00002681
+Epoch 1/1 | Step 0084/0781 | Loss 0.000038 | PosSim 1.000000 | NegSim 0.096739 | LR 0.00002677
+Epoch 1/1 | Step 0085/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.090101 | LR 0.00002673
+Epoch 1/1 | Step 0086/0781 | Loss 0.000029 | PosSim 1.000000 | NegSim 0.096252 | LR 0.00002670
+Epoch 1/1 | Step 0087/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.097168 | LR 0.00002666
+Epoch 1/1 | Step 0088/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.090207 | LR 0.00002662
+Epoch 1/1 | Step 0089/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.094127 | LR 0.00002658
+Epoch 1/1 | Step 0090/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.091740 | LR 0.00002654
+Epoch 1/1 | Step 0091/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.090802 | LR 0.00002650
+Epoch 1/1 | Step 0092/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.092217 | LR 0.00002647
+Epoch 1/1 | Step 0093/0781 | Loss 0.000044 | PosSim 1.000000 | NegSim 0.091399 | LR 0.00002643
+Epoch 1/1 | Step 0094/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.087122 | LR 0.00002639
+Epoch 1/1 | Step 0095/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.091170 | LR 0.00002635
+Epoch 1/1 | Step 0096/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.096196 | LR 0.00002631
+Epoch 1/1 | Step 0097/0781 | Loss 0.000008 | PosSim 1.000000 | NegSim 0.088211 | LR 0.00002627
+Epoch 1/1 | Step 0098/0781 | Loss 0.000015 | PosSim 1.000000 | NegSim 0.095574 | LR 0.00002624
+Epoch 1/1 | Step 0099/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.087668 | LR 0.00002620
+Epoch 1/1 | Step 0100/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.078868 | LR 0.00002616
+Epoch 1/1 | Step 0101/0781 | Loss 0.000007 | PosSim 1.000000 | NegSim 0.090391 | LR 0.00002612
+Epoch 1/1 | Step 0102/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.086105 | LR 0.00002608
+Epoch 1/1 | Step 0103/0781 | Loss 0.000012 | PosSim 1.000000 | NegSim 0.087248 | LR 0.00002604
+Epoch 1/1 | Step 0104/0781 | Loss 0.000008 | PosSim 1.000000 | NegSim 0.092484 | LR 0.00002601
+Epoch 1/1 | Step 0105/0781 | Loss 0.000012 | PosSim 1.000000 | NegSim 0.091088 | LR 0.00002597
+Epoch 1/1 | Step 0106/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.089195 | LR 0.00002593
+Epoch 1/1 | Step 0107/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.084398 | LR 0.00002589
+Epoch 1/1 | Step 0108/0781 | Loss 0.000014 | PosSim 1.000000 | NegSim 0.080403 | LR 0.00002585
+Epoch 1/1 | Step 0109/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.087920 | LR 0.00002581
+Epoch 1/1 | Step 0110/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.081830 | LR 0.00002577
+Epoch 1/1 | Step 0111/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.084060 | LR 0.00002574
+Epoch 1/1 | Step 0112/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.090203 | LR 0.00002570
+Epoch 1/1 | Step 0113/0781 | Loss 0.000008 | PosSim 1.000000 | NegSim 0.091810 | LR 0.00002566
+Epoch 1/1 | Step 0114/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.086134 | LR 0.00002562
+Epoch 1/1 | Step 0115/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.082131 | LR 0.00002558
+Epoch 1/1 | Step 0116/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.087364 | LR 0.00002554
+Epoch 1/1 | Step 0117/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.088304 | LR 0.00002551
+Epoch 1/1 | Step 0118/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.082058 | LR 0.00002547
+Epoch 1/1 | Step 0119/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.089605 | LR 0.00002543
+Epoch 1/1 | Step 0120/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.081914 | LR 0.00002539
+Epoch 1/1 | Step 0121/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.084683 | LR 0.00002535
+Epoch 1/1 | Step 0122/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.082932 | LR 0.00002531
+Epoch 1/1 | Step 0123/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.085837 | LR 0.00002528
+Epoch 1/1 | Step 0124/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.082927 | LR 0.00002524
+Epoch 1/1 | Step 0125/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.085651 | LR 0.00002520
+Epoch 1/1 | Step 0126/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.080257 | LR 0.00002516
+Epoch 1/1 | Step 0127/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.082245 | LR 0.00002512
+Epoch 1/1 | Step 0128/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.085820 | LR 0.00002508
+Epoch 1/1 | Step 0129/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.087627 | LR 0.00002504
+Epoch 1/1 | Step 0130/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.086249 | LR 0.00002501
+Epoch 1/1 | Step 0131/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.077354 | LR 0.00002497
+Epoch 1/1 | Step 0132/0781 | Loss 0.000007 | PosSim 1.000000 | NegSim 0.083035 | LR 0.00002493
+Epoch 1/1 | Step 0133/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.088007 | LR 0.00002489
+Epoch 1/1 | Step 0134/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.080672 | LR 0.00002485
+Epoch 1/1 | Step 0135/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.085167 | LR 0.00002481
+Epoch 1/1 | Step 0136/0781 | Loss 0.000007 | PosSim 1.000000 | NegSim 0.086525 | LR 0.00002478
+Epoch 1/1 | Step 0137/0781 | Loss 0.000015 | PosSim 1.000000 | NegSim 0.083445 | LR 0.00002474
+Epoch 1/1 | Step 0138/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.081382 | LR 0.00002470
+Epoch 1/1 | Step 0139/0781 | Loss 0.000011 | PosSim 1.000000 | NegSim 0.080238 | LR 0.00002466
+Epoch 1/1 | Step 0140/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.085303 | LR 0.00002462
+Epoch 1/1 | Step 0141/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.076864 | LR 0.00002458
+Epoch 1/1 | Step 0142/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.079078 | LR 0.00002455
+Epoch 1/1 | Step 0143/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.083137 | LR 0.00002451
+Epoch 1/1 | Step 0144/0781 | Loss 0.000023 | PosSim 1.000000 | NegSim 0.084199 | LR 0.00002447
+Epoch 1/1 | Step 0145/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.081269 | LR 0.00002443
+Epoch 1/1 | Step 0146/0781 | Loss 0.000012 | PosSim 1.000000 | NegSim 0.085933 | LR 0.00002439
+Epoch 1/1 | Step 0147/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.079832 | LR 0.00002435
+Epoch 1/1 | Step 0148/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.076645 | LR 0.00002431
+Epoch 1/1 | Step 0149/0781 | Loss 0.000007 | PosSim 1.000000 | NegSim 0.086443 | LR 0.00002428
+Epoch 1/1 | Step 0150/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.085363 | LR 0.00002424
+Epoch 1/1 | Step 0151/0781 | Loss 0.000008 | PosSim 1.000000 | NegSim 0.086571 | LR 0.00002420
+Epoch 1/1 | Step 0152/0781 | Loss 0.000007 | PosSim 1.000000 | NegSim 0.086346 | LR 0.00002416
+Epoch 1/1 | Step 0153/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.077835 | LR 0.00002412
+Epoch 1/1 | Step 0154/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.082177 | LR 0.00002408
+Epoch 1/1 | Step 0155/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.080853 | LR 0.00002405
+Epoch 1/1 | Step 0156/0781 | Loss 0.000012 | PosSim 1.000000 | NegSim 0.080425 | LR 0.00002401
+Epoch 1/1 | Step 0157/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.075986 | LR 0.00002397
+Epoch 1/1 | Step 0158/0781 | Loss 0.000011 | PosSim 1.000000 | NegSim 0.080064 | LR 0.00002393
+Epoch 1/1 | Step 0159/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.078015 | LR 0.00002389
+Epoch 1/1 | Step 0160/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.077545 | LR 0.00002385
+Epoch 1/1 | Step 0161/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.080232 | LR 0.00002382
+Epoch 1/1 | Step 0162/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.078873 | LR 0.00002378
+Epoch 1/1 | Step 0163/0781 | Loss 0.000009 | PosSim 1.000000 | NegSim 0.072458 | LR 0.00002374
+Epoch 1/1 | Step 0164/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.075033 | LR 0.00002370
+Epoch 1/1 | Step 0165/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.081283 | LR 0.00002366
+Epoch 1/1 | Step 0166/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.075133 | LR 0.00002362
+Epoch 1/1 | Step 0167/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.075879 | LR 0.00002359
+Epoch 1/1 | Step 0168/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.078589 | LR 0.00002355
+Epoch 1/1 | Step 0169/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.073013 | LR 0.00002351
+Epoch 1/1 | Step 0170/0781 | Loss 0.000145 | PosSim 1.000000 | NegSim 0.074520 | LR 0.00002347
+Epoch 1/1 | Step 0171/0781 | Loss 0.000008 | PosSim 1.000000 | NegSim 0.077779 | LR 0.00002343
+Epoch 1/1 | Step 0172/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.079958 | LR 0.00002339
+Epoch 1/1 | Step 0173/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.071253 | LR 0.00002335
+Epoch 1/1 | Step 0174/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.073100 | LR 0.00002332
+Epoch 1/1 | Step 0175/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.084590 | LR 0.00002328
+Epoch 1/1 | Step 0176/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.071898 | LR 0.00002324
+Epoch 1/1 | Step 0177/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.077107 | LR 0.00002320
+Epoch 1/1 | Step 0178/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.079274 | LR 0.00002316
+Epoch 1/1 | Step 0179/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.080732 | LR 0.00002312
+Epoch 1/1 | Step 0180/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.068868 | LR 0.00002309
+Epoch 1/1 | Step 0181/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.075865 | LR 0.00002305
+Epoch 1/1 | Step 0182/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.076669 | LR 0.00002301
+Epoch 1/1 | Step 0183/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.079765 | LR 0.00002297
+Epoch 1/1 | Step 0184/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.072210 | LR 0.00002293
+Epoch 1/1 | Step 0185/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.070326 | LR 0.00002289
+Epoch 1/1 | Step 0186/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.078639 | LR 0.00002286
+Epoch 1/1 | Step 0187/0781 | Loss 0.000023 | PosSim 1.000000 | NegSim 0.073868 | LR 0.00002282
+Epoch 1/1 | Step 0188/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.078524 | LR 0.00002278
+Epoch 1/1 | Step 0189/0781 | Loss 0.000017 | PosSim 1.000000 | NegSim 0.072534 | LR 0.00002274
+Epoch 1/1 | Step 0190/0781 | Loss 0.000036 | PosSim 1.000000 | NegSim 0.079707 | LR 0.00002270
+Epoch 1/1 | Step 0191/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.082492 | LR 0.00002266
+Epoch 1/1 | Step 0192/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.078113 | LR 0.00002262
+Epoch 1/1 | Step 0193/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.080365 | LR 0.00002259
+Epoch 1/1 | Step 0194/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.073079 | LR 0.00002255
+Epoch 1/1 | Step 0195/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.069678 | LR 0.00002251
+Epoch 1/1 | Step 0196/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.073835 | LR 0.00002247
+Epoch 1/1 | Step 0197/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.074722 | LR 0.00002243
+Epoch 1/1 | Step 0198/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.075360 | LR 0.00002239
+Epoch 1/1 | Step 0199/0781 | Loss 0.000031 | PosSim 1.000000 | NegSim 0.070965 | LR 0.00002236
+Epoch 1/1 | Step 0200/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.074448 | LR 0.00002232
+Epoch 1/1 | Step 0201/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.078023 | LR 0.00002228
+Epoch 1/1 | Step 0202/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.073900 | LR 0.00002224
+Epoch 1/1 | Step 0203/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.067484 | LR 0.00002220
+Epoch 1/1 | Step 0204/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.072078 | LR 0.00002216
+Epoch 1/1 | Step 0205/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.081619 | LR 0.00002213
+Epoch 1/1 | Step 0206/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.078235 | LR 0.00002209
+Epoch 1/1 | Step 0207/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.076175 | LR 0.00002205
+Epoch 1/1 | Step 0208/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.079435 | LR 0.00002201
+Epoch 1/1 | Step 0209/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.074783 | LR 0.00002197
+Epoch 1/1 | Step 0210/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.072620 | LR 0.00002193
+Epoch 1/1 | Step 0211/0781 | Loss 0.000016 | PosSim 1.000000 | NegSim 0.077110 | LR 0.00002190
+Epoch 1/1 | Step 0212/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.072264 | LR 0.00002186
+Epoch 1/1 | Step 0213/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.069280 | LR 0.00002182
+Epoch 1/1 | Step 0214/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.074166 | LR 0.00002178
+Epoch 1/1 | Step 0215/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.074136 | LR 0.00002174
+Epoch 1/1 | Step 0216/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.077813 | LR 0.00002170
+Epoch 1/1 | Step 0217/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.068452 | LR 0.00002166
+Epoch 1/1 | Step 0218/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.065635 | LR 0.00002163
+Epoch 1/1 | Step 0219/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.074472 | LR 0.00002159
+Epoch 1/1 | Step 0220/0781 | Loss 0.000009 | PosSim 1.000000 | NegSim 0.077344 | LR 0.00002155
+Epoch 1/1 | Step 0221/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.071212 | LR 0.00002151
+Epoch 1/1 | Step 0222/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.069463 | LR 0.00002147
+Epoch 1/1 | Step 0223/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.068147 | LR 0.00002143
+Epoch 1/1 | Step 0224/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.071739 | LR 0.00002140
+Epoch 1/1 | Step 0225/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.072010 | LR 0.00002136
+Epoch 1/1 | Step 0226/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.069530 | LR 0.00002132
+Epoch 1/1 | Step 0227/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.065827 | LR 0.00002128
+Epoch 1/1 | Step 0228/0781 | Loss 0.000011 | PosSim 1.000000 | NegSim 0.073457 | LR 0.00002124
+Epoch 1/1 | Step 0229/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.073469 | LR 0.00002120
+Epoch 1/1 | Step 0230/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.072694 | LR 0.00002117
+Epoch 1/1 | Step 0231/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.072130 | LR 0.00002113
+Epoch 1/1 | Step 0232/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.069365 | LR 0.00002109
+Epoch 1/1 | Step 0233/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.067382 | LR 0.00002105
+Epoch 1/1 | Step 0234/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.064531 | LR 0.00002101
+Epoch 1/1 | Step 0235/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.067105 | LR 0.00002097
+Epoch 1/1 | Step 0236/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.075019 | LR 0.00002093
+Epoch 1/1 | Step 0237/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.070851 | LR 0.00002090
+Epoch 1/1 | Step 0238/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.063929 | LR 0.00002086
+Epoch 1/1 | Step 0239/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.073169 | LR 0.00002082
+Epoch 1/1 | Step 0240/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.072187 | LR 0.00002078
+Epoch 1/1 | Step 0241/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.067094 | LR 0.00002074
+Epoch 1/1 | Step 0242/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.074087 | LR 0.00002070
+Epoch 1/1 | Step 0243/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.061754 | LR 0.00002067
+Epoch 1/1 | Step 0244/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.073484 | LR 0.00002063
+Epoch 1/1 | Step 0245/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.073503 | LR 0.00002059
+Epoch 1/1 | Step 0246/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.068586 | LR 0.00002055
+Epoch 1/1 | Step 0247/0781 | Loss 0.000007 | PosSim 1.000000 | NegSim 0.070280 | LR 0.00002051
+Epoch 1/1 | Step 0248/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.068525 | LR 0.00002047
+Epoch 1/1 | Step 0249/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.063511 | LR 0.00002044
+Epoch 1/1 | Step 0250/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.067339 | LR 0.00002040
+Epoch 1/1 | Step 0251/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.067674 | LR 0.00002036
+Epoch 1/1 | Step 0252/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.073883 | LR 0.00002032
+Epoch 1/1 | Step 0253/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.063472 | LR 0.00002028
+Epoch 1/1 | Step 0254/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.072417 | LR 0.00002024
+Epoch 1/1 | Step 0255/0781 | Loss 0.000007 | PosSim 1.000000 | NegSim 0.070142 | LR 0.00002020
+Epoch 1/1 | Step 0256/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.065938 | LR 0.00002017
+Epoch 1/1 | Step 0257/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.063125 | LR 0.00002013
+Epoch 1/1 | Step 0258/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.065953 | LR 0.00002009
+Epoch 1/1 | Step 0259/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.069967 | LR 0.00002005
+Epoch 1/1 | Step 0260/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.067848 | LR 0.00002001
+Epoch 1/1 | Step 0261/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.070025 | LR 0.00001997
+Epoch 1/1 | Step 0262/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.060156 | LR 0.00001994
+Epoch 1/1 | Step 0263/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.061883 | LR 0.00001990
+Epoch 1/1 | Step 0264/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.068798 | LR 0.00001986
+Epoch 1/1 | Step 0265/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.070472 | LR 0.00001982
+Epoch 1/1 | Step 0266/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.060576 | LR 0.00001978
+Epoch 1/1 | Step 0267/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.063909 | LR 0.00001974
+Epoch 1/1 | Step 0268/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.058862 | LR 0.00001971
+Epoch 1/1 | Step 0269/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.068032 | LR 0.00001967
+Epoch 1/1 | Step 0270/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.065546 | LR 0.00001963
+Epoch 1/1 | Step 0271/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.063907 | LR 0.00001959
+Epoch 1/1 | Step 0272/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.071546 | LR 0.00001955
+Epoch 1/1 | Step 0273/0781 | Loss 0.000007 | PosSim 1.000000 | NegSim 0.063412 | LR 0.00001951
+Epoch 1/1 | Step 0274/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.067060 | LR 0.00001948
+Epoch 1/1 | Step 0275/0781 | Loss 0.000023 | PosSim 1.000000 | NegSim 0.063987 | LR 0.00001944
+Epoch 1/1 | Step 0276/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.062656 | LR 0.00001940
+Epoch 1/1 | Step 0277/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.067989 | LR 0.00001936
+Epoch 1/1 | Step 0278/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.066593 | LR 0.00001932
+Epoch 1/1 | Step 0279/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.066543 | LR 0.00001928
+Epoch 1/1 | Step 0280/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.062935 | LR 0.00001924
+Epoch 1/1 | Step 0281/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.065217 | LR 0.00001921
+Epoch 1/1 | Step 0282/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.063430 | LR 0.00001917
+Epoch 1/1 | Step 0283/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.064344 | LR 0.00001913
+Epoch 1/1 | Step 0284/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.060716 | LR 0.00001909
+Epoch 1/1 | Step 0285/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.058459 | LR 0.00001905
+Epoch 1/1 | Step 0286/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.069875 | LR 0.00001901
+Epoch 1/1 | Step 0287/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.060969 | LR 0.00001898
+Epoch 1/1 | Step 0288/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.059684 | LR 0.00001894
+Epoch 1/1 | Step 0289/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.066278 | LR 0.00001890
+Epoch 1/1 | Step 0290/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.058445 | LR 0.00001886
+Epoch 1/1 | Step 0291/0781 | Loss 0.000027 | PosSim 1.000000 | NegSim 0.061837 | LR 0.00001882
+Epoch 1/1 | Step 0292/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.067358 | LR 0.00001878
+Epoch 1/1 | Step 0293/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.067475 | LR 0.00001875
+Epoch 1/1 | Step 0294/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.067381 | LR 0.00001871
+Epoch 1/1 | Step 0295/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.065100 | LR 0.00001867
+Epoch 1/1 | Step 0296/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.066788 | LR 0.00001863
+Epoch 1/1 | Step 0297/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.068188 | LR 0.00001859
+Epoch 1/1 | Step 0298/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.061846 | LR 0.00001855
+Epoch 1/1 | Step 0299/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.056891 | LR 0.00001851
+Epoch 1/1 | Step 0300/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.061924 | LR 0.00001848
+Epoch 1/1 | Step 0301/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.061809 | LR 0.00001844
+Epoch 1/1 | Step 0302/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.064564 | LR 0.00001840
+Epoch 1/1 | Step 0303/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.055962 | LR 0.00001836
+Epoch 1/1 | Step 0304/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.059737 | LR 0.00001832
+Epoch 1/1 | Step 0305/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.065072 | LR 0.00001828
+Epoch 1/1 | Step 0306/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.061538 | LR 0.00001825
+Epoch 1/1 | Step 0307/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.058714 | LR 0.00001821
+Epoch 1/1 | Step 0308/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.067188 | LR 0.00001817
+Epoch 1/1 | Step 0309/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.059083 | LR 0.00001813
+Epoch 1/1 | Step 0310/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.061641 | LR 0.00001809
+Epoch 1/1 | Step 0311/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.064668 | LR 0.00001805
+Epoch 1/1 | Step 0312/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.063498 | LR 0.00001802
+Epoch 1/1 | Step 0313/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.057291 | LR 0.00001798
+Epoch 1/1 | Step 0314/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.058922 | LR 0.00001794
+Epoch 1/1 | Step 0315/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.055851 | LR 0.00001790
+Epoch 1/1 | Step 0316/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.064755 | LR 0.00001786
+Epoch 1/1 | Step 0317/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.064386 | LR 0.00001782
+Epoch 1/1 | Step 0318/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.059904 | LR 0.00001778
+Epoch 1/1 | Step 0319/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.066403 | LR 0.00001775
+Epoch 1/1 | Step 0320/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.059362 | LR 0.00001771
+Epoch 1/1 | Step 0321/0781 | Loss 0.000008 | PosSim 1.000000 | NegSim 0.062871 | LR 0.00001767
+Epoch 1/1 | Step 0322/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.060844 | LR 0.00001763
+Epoch 1/1 | Step 0323/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.057543 | LR 0.00001759
+Epoch 1/1 | Step 0324/0781 | Loss 0.000008 | PosSim 1.000000 | NegSim 0.058895 | LR 0.00001755
+Epoch 1/1 | Step 0325/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.061280 | LR 0.00001752
+Epoch 1/1 | Step 0326/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.061444 | LR 0.00001748
+Epoch 1/1 | Step 0327/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.062247 | LR 0.00001744
+Epoch 1/1 | Step 0328/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.053777 | LR 0.00001740
+Epoch 1/1 | Step 0329/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.056868 | LR 0.00001736
+Epoch 1/1 | Step 0330/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.058704 | LR 0.00001732
+Epoch 1/1 | Step 0331/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.060025 | LR 0.00001729
+Epoch 1/1 | Step 0332/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.056696 | LR 0.00001725
+Epoch 1/1 | Step 0333/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.059078 | LR 0.00001721
+Epoch 1/1 | Step 0334/0781 | Loss 0.000034 | PosSim 1.000000 | NegSim 0.060621 | LR 0.00001717
+Epoch 1/1 | Step 0335/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.055985 | LR 0.00001713
+Epoch 1/1 | Step 0336/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.062044 | LR 0.00001709
+Epoch 1/1 | Step 0337/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.057432 | LR 0.00001706
+Epoch 1/1 | Step 0338/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.057587 | LR 0.00001702
+Epoch 1/1 | Step 0339/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.058453 | LR 0.00001698
+Epoch 1/1 | Step 0340/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.058754 | LR 0.00001694
+Epoch 1/1 | Step 0341/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.055661 | LR 0.00001690
+Epoch 1/1 | Step 0342/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.056725 | LR 0.00001686
+Epoch 1/1 | Step 0343/0781 | Loss 0.000030 | PosSim 1.000000 | NegSim 0.058735 | LR 0.00001682
+Epoch 1/1 | Step 0344/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.058324 | LR 0.00001679
+Epoch 1/1 | Step 0345/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.055361 | LR 0.00001675
+Epoch 1/1 | Step 0346/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.059770 | LR 0.00001671
+Epoch 1/1 | Step 0347/0781 | Loss 0.000007 | PosSim 1.000000 | NegSim 0.055566 | LR 0.00001667
+Epoch 1/1 | Step 0348/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.060004 | LR 0.00001663
+Epoch 1/1 | Step 0349/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.054710 | LR 0.00001659
+Epoch 1/1 | Step 0350/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.058687 | LR 0.00001656
+Epoch 1/1 | Step 0351/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.056061 | LR 0.00001652
+Epoch 1/1 | Step 0352/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.052525 | LR 0.00001648
+Epoch 1/1 | Step 0353/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.057605 | LR 0.00001644
+Epoch 1/1 | Step 0354/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.057599 | LR 0.00001640
+Epoch 1/1 | Step 0355/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.052404 | LR 0.00001636
+Epoch 1/1 | Step 0356/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.055228 | LR 0.00001633
+Epoch 1/1 | Step 0357/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.057881 | LR 0.00001629
+Epoch 1/1 | Step 0358/0781 | Loss 0.000008 | PosSim 1.000000 | NegSim 0.058673 | LR 0.00001625
+Epoch 1/1 | Step 0359/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.058252 | LR 0.00001621
+Epoch 1/1 | Step 0360/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.052897 | LR 0.00001617
+Epoch 1/1 | Step 0361/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.053062 | LR 0.00001613
+Epoch 1/1 | Step 0362/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.052734 | LR 0.00001609
+Epoch 1/1 | Step 0363/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.057001 | LR 0.00001606
+Epoch 1/1 | Step 0364/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.055980 | LR 0.00001602
+Epoch 1/1 | Step 0365/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.057251 | LR 0.00001598
+Epoch 1/1 | Step 0366/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.058983 | LR 0.00001594
+Epoch 1/1 | Step 0367/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.052170 | LR 0.00001590
+Epoch 1/1 | Step 0368/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.057058 | LR 0.00001586
+Epoch 1/1 | Step 0369/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.056085 | LR 0.00001583
+Epoch 1/1 | Step 0370/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.055854 | LR 0.00001579
+Epoch 1/1 | Step 0371/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.061567 | LR 0.00001575
+Epoch 1/1 | Step 0372/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.056436 | LR 0.00001571
+Epoch 1/1 | Step 0373/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.052383 | LR 0.00001567
+Epoch 1/1 | Step 0374/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.058084 | LR 0.00001563
+Epoch 1/1 | Step 0375/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.057054 | LR 0.00001560
+Epoch 1/1 | Step 0376/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.054675 | LR 0.00001556
+Epoch 1/1 | Step 0377/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.051031 | LR 0.00001552
+Epoch 1/1 | Step 0378/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.059019 | LR 0.00001548
+Epoch 1/1 | Step 0379/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.061496 | LR 0.00001544
+Epoch 1/1 | Step 0380/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.054723 | LR 0.00001540
+Epoch 1/1 | Step 0381/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.053778 | LR 0.00001536
+Epoch 1/1 | Step 0382/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.054092 | LR 0.00001533
+Epoch 1/1 | Step 0383/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.054784 | LR 0.00001529
+Epoch 1/1 | Step 0384/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.057652 | LR 0.00001525
+Epoch 1/1 | Step 0385/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.051469 | LR 0.00001521
+Epoch 1/1 | Step 0386/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.054347 | LR 0.00001517
+Epoch 1/1 | Step 0387/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.050325 | LR 0.00001513
+Epoch 1/1 | Step 0388/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.055901 | LR 0.00001510
+Epoch 1/1 | Step 0389/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.052967 | LR 0.00001506
+Epoch 1/1 | Step 0390/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.052462 | LR 0.00001502
+Epoch 1/1 | Step 0391/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.053021 | LR 0.00001498
+Epoch 1/1 | Step 0392/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.052860 | LR 0.00001494
+Epoch 1/1 | Step 0393/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.054336 | LR 0.00001490
+Epoch 1/1 | Step 0394/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.048868 | LR 0.00001487
+Epoch 1/1 | Step 0395/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.054950 | LR 0.00001483
+Epoch 1/1 | Step 0396/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.051337 | LR 0.00001479
+Epoch 1/1 | Step 0397/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.054101 | LR 0.00001475
+Epoch 1/1 | Step 0398/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.049475 | LR 0.00001471
+Epoch 1/1 | Step 0399/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.053419 | LR 0.00001467
+Epoch 1/1 | Step 0400/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.052541 | LR 0.00001464
+Epoch 1/1 | Step 0401/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049397 | LR 0.00001460
+Epoch 1/1 | Step 0402/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.057067 | LR 0.00001456
+Epoch 1/1 | Step 0403/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.052742 | LR 0.00001452
+Epoch 1/1 | Step 0404/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.057007 | LR 0.00001448
+Epoch 1/1 | Step 0405/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.049975 | LR 0.00001444
+Epoch 1/1 | Step 0406/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.051380 | LR 0.00001440
+Epoch 1/1 | Step 0407/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.053438 | LR 0.00001437
+Epoch 1/1 | Step 0408/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048875 | LR 0.00001433
+Epoch 1/1 | Step 0409/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.054316 | LR 0.00001429
+Epoch 1/1 | Step 0410/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049916 | LR 0.00001425
+Epoch 1/1 | Step 0411/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.050834 | LR 0.00001421
+Epoch 1/1 | Step 0412/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.051682 | LR 0.00001417
+Epoch 1/1 | Step 0413/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.050239 | LR 0.00001414
+Epoch 1/1 | Step 0414/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.052106 | LR 0.00001410
+Epoch 1/1 | Step 0415/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.050811 | LR 0.00001406
+Epoch 1/1 | Step 0416/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.052523 | LR 0.00001402
+Epoch 1/1 | Step 0417/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.053645 | LR 0.00001398
+Epoch 1/1 | Step 0418/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.054123 | LR 0.00001394
+Epoch 1/1 | Step 0419/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.051061 | LR 0.00001391
+Epoch 1/1 | Step 0420/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.054611 | LR 0.00001387
+Epoch 1/1 | Step 0421/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.051155 | LR 0.00001383
+Epoch 1/1 | Step 0422/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.047582 | LR 0.00001379
+Epoch 1/1 | Step 0423/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.050338 | LR 0.00001375
+Epoch 1/1 | Step 0424/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.053954 | LR 0.00001371
+Epoch 1/1 | Step 0425/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.050511 | LR 0.00001367
+Epoch 1/1 | Step 0426/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.053574 | LR 0.00001364
+Epoch 1/1 | Step 0427/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.050472 | LR 0.00001360
+Epoch 1/1 | Step 0428/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.057452 | LR 0.00001356
+Epoch 1/1 | Step 0429/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.052043 | LR 0.00001352
+Epoch 1/1 | Step 0430/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.054895 | LR 0.00001348
+Epoch 1/1 | Step 0431/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.051928 | LR 0.00001344
+Epoch 1/1 | Step 0432/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.051842 | LR 0.00001341
+Epoch 1/1 | Step 0433/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.052203 | LR 0.00001337
+Epoch 1/1 | Step 0434/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.050663 | LR 0.00001333
+Epoch 1/1 | Step 0435/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.049176 | LR 0.00001329
+Epoch 1/1 | Step 0436/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049438 | LR 0.00001325
+Epoch 1/1 | Step 0437/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.050552 | LR 0.00001321
+Epoch 1/1 | Step 0438/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.057022 | LR 0.00001318
+Epoch 1/1 | Step 0439/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.059535 | LR 0.00001314
+Epoch 1/1 | Step 0440/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.049159 | LR 0.00001310
+Epoch 1/1 | Step 0441/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.055555 | LR 0.00001306
+Epoch 1/1 | Step 0442/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.049492 | LR 0.00001302
+Epoch 1/1 | Step 0443/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049884 | LR 0.00001298
+Epoch 1/1 | Step 0444/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048155 | LR 0.00001294
+Epoch 1/1 | Step 0445/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.056115 | LR 0.00001291
+Epoch 1/1 | Step 0446/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.052105 | LR 0.00001287
+Epoch 1/1 | Step 0447/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.053035 | LR 0.00001283
+Epoch 1/1 | Step 0448/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.057899 | LR 0.00001279
+Epoch 1/1 | Step 0449/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.048355 | LR 0.00001275
+Epoch 1/1 | Step 0450/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.054991 | LR 0.00001271
+Epoch 1/1 | Step 0451/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045689 | LR 0.00001268
+Epoch 1/1 | Step 0452/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.053417 | LR 0.00001264
+Epoch 1/1 | Step 0453/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046686 | LR 0.00001260
+Epoch 1/1 | Step 0454/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.056357 | LR 0.00001256
+Epoch 1/1 | Step 0455/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.045106 | LR 0.00001252
+Epoch 1/1 | Step 0456/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.051564 | LR 0.00001248
+Epoch 1/1 | Step 0457/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.052775 | LR 0.00001245
+Epoch 1/1 | Step 0458/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.052972 | LR 0.00001241
+Epoch 1/1 | Step 0459/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048867 | LR 0.00001237
+Epoch 1/1 | Step 0460/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.046488 | LR 0.00001233
+Epoch 1/1 | Step 0461/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.051480 | LR 0.00001229
+Epoch 1/1 | Step 0462/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.051285 | LR 0.00001225
+Epoch 1/1 | Step 0463/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045198 | LR 0.00001222
+Epoch 1/1 | Step 0464/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049911 | LR 0.00001218
+Epoch 1/1 | Step 0465/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049540 | LR 0.00001214
+Epoch 1/1 | Step 0466/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.051520 | LR 0.00001210
+Epoch 1/1 | Step 0467/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.052487 | LR 0.00001206
+Epoch 1/1 | Step 0468/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.053862 | LR 0.00001202
+Epoch 1/1 | Step 0469/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048353 | LR 0.00001198
+Epoch 1/1 | Step 0470/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.050429 | LR 0.00001195
+Epoch 1/1 | Step 0471/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047254 | LR 0.00001191
+Epoch 1/1 | Step 0472/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046862 | LR 0.00001187
+Epoch 1/1 | Step 0473/0781 | Loss 0.000009 | PosSim 1.000000 | NegSim 0.055943 | LR 0.00001183
+Epoch 1/1 | Step 0474/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.049815 | LR 0.00001179
+Epoch 1/1 | Step 0475/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.048448 | LR 0.00001175
+Epoch 1/1 | Step 0476/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.049657 | LR 0.00001172
+Epoch 1/1 | Step 0477/0781 | Loss 0.000007 | PosSim 1.000000 | NegSim 0.051614 | LR 0.00001168
+Epoch 1/1 | Step 0478/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047699 | LR 0.00001164
+Epoch 1/1 | Step 0479/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.053070 | LR 0.00001160
+Epoch 1/1 | Step 0480/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049306 | LR 0.00001156
+Epoch 1/1 | Step 0481/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.047636 | LR 0.00001152
+Epoch 1/1 | Step 0482/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.051071 | LR 0.00001149
+Epoch 1/1 | Step 0483/0781 | Loss 0.000013 | PosSim 1.000000 | NegSim 0.050977 | LR 0.00001145
+Epoch 1/1 | Step 0484/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.050049 | LR 0.00001141
+Epoch 1/1 | Step 0485/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.051035 | LR 0.00001137
+Epoch 1/1 | Step 0486/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.046178 | LR 0.00001133
+Epoch 1/1 | Step 0487/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.052458 | LR 0.00001129
+Epoch 1/1 | Step 0488/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.051693 | LR 0.00001125
+Epoch 1/1 | Step 0489/0781 | Loss 0.000013 | PosSim 1.000000 | NegSim 0.050016 | LR 0.00001122
+Epoch 1/1 | Step 0490/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048402 | LR 0.00001118
+Epoch 1/1 | Step 0491/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048817 | LR 0.00001114
+Epoch 1/1 | Step 0492/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.050529 | LR 0.00001110
+Epoch 1/1 | Step 0493/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.050304 | LR 0.00001106
+Epoch 1/1 | Step 0494/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046091 | LR 0.00001102
+Epoch 1/1 | Step 0495/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047002 | LR 0.00001099
+Epoch 1/1 | Step 0496/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.052538 | LR 0.00001095
+Epoch 1/1 | Step 0497/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048335 | LR 0.00001091
+Epoch 1/1 | Step 0498/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.051867 | LR 0.00001087
+Epoch 1/1 | Step 0499/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048802 | LR 0.00001083
+Epoch 1/1 | Step 0500/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.050053 | LR 0.00001079
+Epoch 1/1 | Step 0501/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.050765 | LR 0.00001076
+Epoch 1/1 | Step 0502/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.053188 | LR 0.00001072
+Epoch 1/1 | Step 0503/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.051339 | LR 0.00001068
+Epoch 1/1 | Step 0504/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047106 | LR 0.00001064
+Epoch 1/1 | Step 0505/0781 | Loss 0.000018 | PosSim 1.000000 | NegSim 0.046485 | LR 0.00001060
+Epoch 1/1 | Step 0506/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048099 | LR 0.00001056
+Epoch 1/1 | Step 0507/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049391 | LR 0.00001052
+Epoch 1/1 | Step 0508/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048628 | LR 0.00001049
+Epoch 1/1 | Step 0509/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.046596 | LR 0.00001045
+Epoch 1/1 | Step 0510/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.049032 | LR 0.00001041
+Epoch 1/1 | Step 0511/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.048818 | LR 0.00001037
+Epoch 1/1 | Step 0512/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046584 | LR 0.00001033
+Epoch 1/1 | Step 0513/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.048633 | LR 0.00001029
+Epoch 1/1 | Step 0514/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.049730 | LR 0.00001026
+Epoch 1/1 | Step 0515/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.049682 | LR 0.00001022
+Epoch 1/1 | Step 0516/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.045105 | LR 0.00001018
+Epoch 1/1 | Step 0517/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049947 | LR 0.00001014
+Epoch 1/1 | Step 0518/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.048903 | LR 0.00001010
+Epoch 1/1 | Step 0519/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048910 | LR 0.00001006
+Epoch 1/1 | Step 0520/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.049589 | LR 0.00001003
+Epoch 1/1 | Step 0521/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047994 | LR 0.00000999
+Epoch 1/1 | Step 0522/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.048367 | LR 0.00000995
+Epoch 1/1 | Step 0523/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.056714 | LR 0.00000991
+Epoch 1/1 | Step 0524/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.045786 | LR 0.00000987
+Epoch 1/1 | Step 0525/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.048960 | LR 0.00000983
+Epoch 1/1 | Step 0526/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.050332 | LR 0.00000980
+Epoch 1/1 | Step 0527/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046191 | LR 0.00000976
+Epoch 1/1 | Step 0528/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.049469 | LR 0.00000972
+Epoch 1/1 | Step 0529/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.051696 | LR 0.00000968
+Epoch 1/1 | Step 0530/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045396 | LR 0.00000964
+Epoch 1/1 | Step 0531/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049503 | LR 0.00000960
+Epoch 1/1 | Step 0532/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.048243 | LR 0.00000956
+Epoch 1/1 | Step 0533/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046628 | LR 0.00000953
+Epoch 1/1 | Step 0534/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045367 | LR 0.00000949
+Epoch 1/1 | Step 0535/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.041859 | LR 0.00000945
+Epoch 1/1 | Step 0536/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049354 | LR 0.00000941
+Epoch 1/1 | Step 0537/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043829 | LR 0.00000937
+Epoch 1/1 | Step 0538/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044453 | LR 0.00000933
+Epoch 1/1 | Step 0539/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043244 | LR 0.00000930
+Epoch 1/1 | Step 0540/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049434 | LR 0.00000926
+Epoch 1/1 | Step 0541/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047669 | LR 0.00000922
+Epoch 1/1 | Step 0542/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049523 | LR 0.00000918
+Epoch 1/1 | Step 0543/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.048061 | LR 0.00000914
+Epoch 1/1 | Step 0544/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043222 | LR 0.00000910
+Epoch 1/1 | Step 0545/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.047496 | LR 0.00000907
+Epoch 1/1 | Step 0546/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044640 | LR 0.00000903
+Epoch 1/1 | Step 0547/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.047012 | LR 0.00000899
+Epoch 1/1 | Step 0548/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.049966 | LR 0.00000895
+Epoch 1/1 | Step 0549/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046131 | LR 0.00000891
+Epoch 1/1 | Step 0550/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046261 | LR 0.00000887
+Epoch 1/1 | Step 0551/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049487 | LR 0.00000883
+Epoch 1/1 | Step 0552/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.051006 | LR 0.00000880
+Epoch 1/1 | Step 0553/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047773 | LR 0.00000876
+Epoch 1/1 | Step 0554/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.046989 | LR 0.00000872
+Epoch 1/1 | Step 0555/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045409 | LR 0.00000868
+Epoch 1/1 | Step 0556/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.050031 | LR 0.00000864
+Epoch 1/1 | Step 0557/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.049031 | LR 0.00000860
+Epoch 1/1 | Step 0558/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049602 | LR 0.00000857
+Epoch 1/1 | Step 0559/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048668 | LR 0.00000853
+Epoch 1/1 | Step 0560/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.047883 | LR 0.00000849
+Epoch 1/1 | Step 0561/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.047088 | LR 0.00000845
+Epoch 1/1 | Step 0562/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.053585 | LR 0.00000841
+Epoch 1/1 | Step 0563/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049500 | LR 0.00000837
+Epoch 1/1 | Step 0564/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.050027 | LR 0.00000834
+Epoch 1/1 | Step 0565/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045858 | LR 0.00000830
+Epoch 1/1 | Step 0566/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045276 | LR 0.00000826
+Epoch 1/1 | Step 0567/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045559 | LR 0.00000822
+Epoch 1/1 | Step 0568/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.046273 | LR 0.00000818
+Epoch 1/1 | Step 0569/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.046872 | LR 0.00000814
+Epoch 1/1 | Step 0570/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049452 | LR 0.00000810
+Epoch 1/1 | Step 0571/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048097 | LR 0.00000807
+Epoch 1/1 | Step 0572/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047403 | LR 0.00000803
+Epoch 1/1 | Step 0573/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046344 | LR 0.00000799
+Epoch 1/1 | Step 0574/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043445 | LR 0.00000795
+Epoch 1/1 | Step 0575/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049077 | LR 0.00000791
+Epoch 1/1 | Step 0576/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046956 | LR 0.00000787
+Epoch 1/1 | Step 0577/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046036 | LR 0.00000784
+Epoch 1/1 | Step 0578/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046633 | LR 0.00000780
+Epoch 1/1 | Step 0579/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047398 | LR 0.00000776
+Epoch 1/1 | Step 0580/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.048337 | LR 0.00000772
+Epoch 1/1 | Step 0581/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045978 | LR 0.00000768
+Epoch 1/1 | Step 0582/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049367 | LR 0.00000764
+Epoch 1/1 | Step 0583/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046017 | LR 0.00000761
+Epoch 1/1 | Step 0584/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045752 | LR 0.00000757
+Epoch 1/1 | Step 0585/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048267 | LR 0.00000753
+Epoch 1/1 | Step 0586/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049653 | LR 0.00000749
+Epoch 1/1 | Step 0587/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.041739 | LR 0.00000745
+Epoch 1/1 | Step 0588/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.041171 | LR 0.00000741
+Epoch 1/1 | Step 0589/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.044674 | LR 0.00000738
+Epoch 1/1 | Step 0590/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047491 | LR 0.00000734
+Epoch 1/1 | Step 0591/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046742 | LR 0.00000730
+Epoch 1/1 | Step 0592/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.047162 | LR 0.00000726
+Epoch 1/1 | Step 0593/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047066 | LR 0.00000722
+Epoch 1/1 | Step 0594/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.052139 | LR 0.00000718
+Epoch 1/1 | Step 0595/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048431 | LR 0.00000714
+Epoch 1/1 | Step 0596/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.045304 | LR 0.00000711
+Epoch 1/1 | Step 0597/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048391 | LR 0.00000707
+Epoch 1/1 | Step 0598/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048046 | LR 0.00000703
+Epoch 1/1 | Step 0599/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044505 | LR 0.00000699
+Epoch 1/1 | Step 0600/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047189 | LR 0.00000695
+Epoch 1/1 | Step 0601/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043126 | LR 0.00000691
+Epoch 1/1 | Step 0602/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043998 | LR 0.00000688
+Epoch 1/1 | Step 0603/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045291 | LR 0.00000684
+Epoch 1/1 | Step 0604/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045088 | LR 0.00000680
+Epoch 1/1 | Step 0605/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045148 | LR 0.00000676
+Epoch 1/1 | Step 0606/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.041501 | LR 0.00000672
+Epoch 1/1 | Step 0607/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048275 | LR 0.00000668
+Epoch 1/1 | Step 0608/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.048848 | LR 0.00000665
+Epoch 1/1 | Step 0609/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044804 | LR 0.00000661
+Epoch 1/1 | Step 0610/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.044344 | LR 0.00000657
+Epoch 1/1 | Step 0611/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047118 | LR 0.00000653
+Epoch 1/1 | Step 0612/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.051478 | LR 0.00000649
+Epoch 1/1 | Step 0613/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048929 | LR 0.00000645
+Epoch 1/1 | Step 0614/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048699 | LR 0.00000641
+Epoch 1/1 | Step 0615/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.042640 | LR 0.00000638
+Epoch 1/1 | Step 0616/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.051443 | LR 0.00000634
+Epoch 1/1 | Step 0617/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047547 | LR 0.00000630
+Epoch 1/1 | Step 0618/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043481 | LR 0.00000626
+Epoch 1/1 | Step 0619/0781 | Loss 0.000004 | PosSim 1.000000 | NegSim 0.050850 | LR 0.00000622
+Epoch 1/1 | Step 0620/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.042891 | LR 0.00000618
+Epoch 1/1 | Step 0621/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047129 | LR 0.00000615
+Epoch 1/1 | Step 0622/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048614 | LR 0.00000611
+Epoch 1/1 | Step 0623/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049714 | LR 0.00000607
+Epoch 1/1 | Step 0624/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044492 | LR 0.00000603
+Epoch 1/1 | Step 0625/0781 | Loss 0.000016 | PosSim 1.000000 | NegSim 0.050041 | LR 0.00000599
+Epoch 1/1 | Step 0626/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046662 | LR 0.00000595
+Epoch 1/1 | Step 0627/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043770 | LR 0.00000592
+Epoch 1/1 | Step 0628/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043215 | LR 0.00000588
+Epoch 1/1 | Step 0629/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.045293 | LR 0.00000584
+Epoch 1/1 | Step 0630/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046752 | LR 0.00000580
+Epoch 1/1 | Step 0631/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043834 | LR 0.00000576
+Epoch 1/1 | Step 0632/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045059 | LR 0.00000572
+Epoch 1/1 | Step 0633/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045781 | LR 0.00000569
+Epoch 1/1 | Step 0634/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043398 | LR 0.00000565
+Epoch 1/1 | Step 0635/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044963 | LR 0.00000561
+Epoch 1/1 | Step 0636/0781 | Loss 0.000008 | PosSim 1.000000 | NegSim 0.045820 | LR 0.00000557
+Epoch 1/1 | Step 0637/0781 | Loss 0.000011 | PosSim 1.000000 | NegSim 0.045134 | LR 0.00000553
+Epoch 1/1 | Step 0638/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.043838 | LR 0.00000549
+Epoch 1/1 | Step 0639/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044323 | LR 0.00000545
+Epoch 1/1 | Step 0640/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.042250 | LR 0.00000542
+Epoch 1/1 | Step 0641/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.046047 | LR 0.00000538
+Epoch 1/1 | Step 0642/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048792 | LR 0.00000534
+Epoch 1/1 | Step 0643/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.044552 | LR 0.00000530
+Epoch 1/1 | Step 0644/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.045058 | LR 0.00000526
+Epoch 1/1 | Step 0645/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.039643 | LR 0.00000522
+Epoch 1/1 | Step 0646/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.047426 | LR 0.00000519
+Epoch 1/1 | Step 0647/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.040583 | LR 0.00000515
+Epoch 1/1 | Step 0648/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045014 | LR 0.00000511
+Epoch 1/1 | Step 0649/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.042851 | LR 0.00000507
+Epoch 1/1 | Step 0650/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045495 | LR 0.00000503
+Epoch 1/1 | Step 0651/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.042389 | LR 0.00000499
+Epoch 1/1 | Step 0652/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044761 | LR 0.00000496
+Epoch 1/1 | Step 0653/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.045293 | LR 0.00000492
+Epoch 1/1 | Step 0654/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.039274 | LR 0.00000488
+Epoch 1/1 | Step 0655/0781 | Loss 0.000013 | PosSim 1.000000 | NegSim 0.046519 | LR 0.00000484
+Epoch 1/1 | Step 0656/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044499 | LR 0.00000480
+Epoch 1/1 | Step 0657/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.045643 | LR 0.00000476
+Epoch 1/1 | Step 0658/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.042953 | LR 0.00000472
+Epoch 1/1 | Step 0659/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044777 | LR 0.00000469
+Epoch 1/1 | Step 0660/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.042959 | LR 0.00000465
+Epoch 1/1 | Step 0661/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.044760 | LR 0.00000461
+Epoch 1/1 | Step 0662/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043715 | LR 0.00000457
+Epoch 1/1 | Step 0663/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045697 | LR 0.00000453
+Epoch 1/1 | Step 0664/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045083 | LR 0.00000449
+Epoch 1/1 | Step 0665/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046377 | LR 0.00000446
+Epoch 1/1 | Step 0666/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045189 | LR 0.00000442
+Epoch 1/1 | Step 0667/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.051854 | LR 0.00000438
+Epoch 1/1 | Step 0668/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.042618 | LR 0.00000434
+Epoch 1/1 | Step 0669/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047746 | LR 0.00000430
+Epoch 1/1 | Step 0670/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048238 | LR 0.00000426
+Epoch 1/1 | Step 0671/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046721 | LR 0.00000423
+Epoch 1/1 | Step 0672/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.042926 | LR 0.00000419
+Epoch 1/1 | Step 0673/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.041485 | LR 0.00000415
+Epoch 1/1 | Step 0674/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.046957 | LR 0.00000411
+Epoch 1/1 | Step 0675/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045256 | LR 0.00000407
+Epoch 1/1 | Step 0676/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.041473 | LR 0.00000403
+Epoch 1/1 | Step 0677/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.041504 | LR 0.00000399
+Epoch 1/1 | Step 0678/0781 | Loss 0.000015 | PosSim 1.000000 | NegSim 0.043884 | LR 0.00000396
+Epoch 1/1 | Step 0679/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046007 | LR 0.00000392
+Epoch 1/1 | Step 0680/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.042006 | LR 0.00000388
+Epoch 1/1 | Step 0681/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.045896 | LR 0.00000384
+Epoch 1/1 | Step 0682/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046007 | LR 0.00000380
+Epoch 1/1 | Step 0683/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.042239 | LR 0.00000376
+Epoch 1/1 | Step 0684/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046687 | LR 0.00000373
+Epoch 1/1 | Step 0685/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.042968 | LR 0.00000369
+Epoch 1/1 | Step 0686/0781 | Loss 0.000005 | PosSim 1.000000 | NegSim 0.044181 | LR 0.00000365
+Epoch 1/1 | Step 0687/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045026 | LR 0.00000361
+Epoch 1/1 | Step 0688/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048334 | LR 0.00000357
+Epoch 1/1 | Step 0689/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046701 | LR 0.00000353
+Epoch 1/1 | Step 0690/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.044877 | LR 0.00000350
+Epoch 1/1 | Step 0691/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044354 | LR 0.00000346
+Epoch 1/1 | Step 0692/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.051871 | LR 0.00000342
+Epoch 1/1 | Step 0693/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044898 | LR 0.00000338
+Epoch 1/1 | Step 0694/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.040882 | LR 0.00000334
+Epoch 1/1 | Step 0695/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043094 | LR 0.00000330
+Epoch 1/1 | Step 0696/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043692 | LR 0.00000327
+Epoch 1/1 | Step 0697/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043488 | LR 0.00000323
+Epoch 1/1 | Step 0698/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047795 | LR 0.00000319
+Epoch 1/1 | Step 0699/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044569 | LR 0.00000315
+Epoch 1/1 | Step 0700/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045357 | LR 0.00000311
+Epoch 1/1 | Step 0701/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.045795 | LR 0.00000307
+Epoch 1/1 | Step 0702/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044189 | LR 0.00000303
+Epoch 1/1 | Step 0703/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.040311 | LR 0.00000300
+Epoch 1/1 | Step 0704/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049308 | LR 0.00000296
+Epoch 1/1 | Step 0705/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.037005 | LR 0.00000292
+Epoch 1/1 | Step 0706/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.042829 | LR 0.00000288
+Epoch 1/1 | Step 0707/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.046953 | LR 0.00000284
+Epoch 1/1 | Step 0708/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.040299 | LR 0.00000280
+Epoch 1/1 | Step 0709/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.040147 | LR 0.00000277
+Epoch 1/1 | Step 0710/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.042282 | LR 0.00000273
+Epoch 1/1 | Step 0711/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.041218 | LR 0.00000269
+Epoch 1/1 | Step 0712/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046761 | LR 0.00000265
+Epoch 1/1 | Step 0713/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046870 | LR 0.00000261
+Epoch 1/1 | Step 0714/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.042968 | LR 0.00000257
+Epoch 1/1 | Step 0715/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046939 | LR 0.00000254
+Epoch 1/1 | Step 0716/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045881 | LR 0.00000250
+Epoch 1/1 | Step 0717/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.041165 | LR 0.00000246
+Epoch 1/1 | Step 0718/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.049557 | LR 0.00000242
+Epoch 1/1 | Step 0719/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043209 | LR 0.00000238
+Epoch 1/1 | Step 0720/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045152 | LR 0.00000234
+Epoch 1/1 | Step 0721/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.045651 | LR 0.00000230
+Epoch 1/1 | Step 0722/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045529 | LR 0.00000227
+Epoch 1/1 | Step 0723/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048368 | LR 0.00000223
+Epoch 1/1 | Step 0724/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045730 | LR 0.00000219
+Epoch 1/1 | Step 0725/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044579 | LR 0.00000215
+Epoch 1/1 | Step 0726/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.041841 | LR 0.00000211
+Epoch 1/1 | Step 0727/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048204 | LR 0.00000207
+Epoch 1/1 | Step 0728/0781 | Loss 0.000006 | PosSim 1.000000 | NegSim 0.045764 | LR 0.00000204
+Epoch 1/1 | Step 0729/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.042223 | LR 0.00000200
+Epoch 1/1 | Step 0730/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043161 | LR 0.00000196
+Epoch 1/1 | Step 0731/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.041056 | LR 0.00000192
+Epoch 1/1 | Step 0732/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.047956 | LR 0.00000188
+Epoch 1/1 | Step 0733/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.046610 | LR 0.00000184
+Epoch 1/1 | Step 0734/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044469 | LR 0.00000181
+Epoch 1/1 | Step 0735/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043057 | LR 0.00000177
+Epoch 1/1 | Step 0736/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044406 | LR 0.00000173
+Epoch 1/1 | Step 0737/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044488 | LR 0.00000169
+Epoch 1/1 | Step 0738/0781 | Loss 0.000008 | PosSim 1.000000 | NegSim 0.046391 | LR 0.00000165
+Epoch 1/1 | Step 0739/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.044075 | LR 0.00000161
+Epoch 1/1 | Step 0740/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.041771 | LR 0.00000157
+Epoch 1/1 | Step 0741/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.044067 | LR 0.00000154
+Epoch 1/1 | Step 0742/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047369 | LR 0.00000150
+Epoch 1/1 | Step 0743/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.043605 | LR 0.00000146
+Epoch 1/1 | Step 0744/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.040399 | LR 0.00000142
+Epoch 1/1 | Step 0745/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.041316 | LR 0.00000138
+Epoch 1/1 | Step 0746/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043956 | LR 0.00000134
+Epoch 1/1 | Step 0747/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047881 | LR 0.00000131
+Epoch 1/1 | Step 0748/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043141 | LR 0.00000127
+Epoch 1/1 | Step 0749/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.044956 | LR 0.00000123
+Epoch 1/1 | Step 0750/0781 | Loss 0.000021 | PosSim 1.000000 | NegSim 0.040879 | LR 0.00000119
+Epoch 1/1 | Step 0751/0781 | Loss 0.000003 | PosSim 1.000000 | NegSim 0.046338 | LR 0.00000115
+Epoch 1/1 | Step 0752/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.040018 | LR 0.00000111
+Epoch 1/1 | Step 0753/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044143 | LR 0.00000108
+Epoch 1/1 | Step 0754/0781 | Loss 0.000028 | PosSim 1.000000 | NegSim 0.042389 | LR 0.00000104
+Epoch 1/1 | Step 0755/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.045414 | LR 0.00000100
+Epoch 1/1 | Step 0756/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.040168 | LR 0.00000096
+Epoch 1/1 | Step 0757/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.044236 | LR 0.00000092
+Epoch 1/1 | Step 0758/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.045647 | LR 0.00000088
+Epoch 1/1 | Step 0759/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.039862 | LR 0.00000085
+Epoch 1/1 | Step 0760/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.040724 | LR 0.00000081
+Epoch 1/1 | Step 0761/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043580 | LR 0.00000077
+Epoch 1/1 | Step 0762/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.044394 | LR 0.00000073
+Epoch 1/1 | Step 0763/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.042501 | LR 0.00000069
+Epoch 1/1 | Step 0764/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.042751 | LR 0.00000065
+Epoch 1/1 | Step 0765/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.039550 | LR 0.00000061
+Epoch 1/1 | Step 0766/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.041521 | LR 0.00000058
+Epoch 1/1 | Step 0767/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044847 | LR 0.00000054
+Epoch 1/1 | Step 0768/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044012 | LR 0.00000050
+Epoch 1/1 | Step 0769/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.043672 | LR 0.00000046
+Epoch 1/1 | Step 0770/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.041848 | LR 0.00000042
+Epoch 1/1 | Step 0771/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044003 | LR 0.00000038
+Epoch 1/1 | Step 0772/0781 | Loss 0.000007 | PosSim 1.000000 | NegSim 0.046936 | LR 0.00000035
+Epoch 1/1 | Step 0773/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.047592 | LR 0.00000031
+Epoch 1/1 | Step 0774/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.042740 | LR 0.00000027
+Epoch 1/1 | Step 0775/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.041708 | LR 0.00000023
+Epoch 1/1 | Step 0776/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.044727 | LR 0.00000019
+Epoch 1/1 | Step 0777/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.048851 | LR 0.00000015
+Epoch 1/1 | Step 0778/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.043267 | LR 0.00000012
+Epoch 1/1 | Step 0779/0781 | Loss 0.000002 | PosSim 1.000000 | NegSim 0.044109 | LR 0.00000008
+Epoch 1/1 | Step 0780/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.041260 | LR 0.00000004
+Epoch 1/1 | Step 0781/0781 | Loss 0.000001 | PosSim 1.000000 | NegSim 0.042549 | LR 0.00000000
+
+----------------------------------------------------------------------
+Epoch 1 summary
+----------------------------------------------------------------------
+Average loss: 0.000206
+Average positive cosine: 1.000000
+Average negative cosine: 0.068195
+
+Checkpoint saved: experiments\dropout_fixed_mask_50k\20260819_055050\checkpoint\epoch_1
+
+======================================================================
+TRAINING COMPLETE
+======================================================================
+
+Experiment saved to:
+experiments\dropout_fixed_mask_50k\20260819_055050
+
+(simcse-reproduction) D:\CODING\Paper Reproduction\simcse-reproduction>python src/evaluate_sts.py --checkpoint "experiments\dropout_fixed_mask_50k\20260819_055050\checkpoint\epoch_1\training_state.pt" --max-length 32
+======================================================================
+SIMCSE STS-B EVALUATION
+======================================================================
+
+Evaluation mode: LOCAL CHECKPOINT
+Checkpoint: experiments\dropout_fixed_mask_50k\20260819_055050\checkpoint\epoch_1\training_state.pt
+Split: validation
+Max length: 32
+Batch size: 64
+Maximum samples: None (full split)
+
+Device: cpu
+
+Loading checkpoint...
+Checkpoint: experiments\dropout_fixed_mask_50k\20260819_055050\checkpoint\epoch_1\training_state.pt
+Checkpoint epoch: 1
+Checkpoint global step: 781
+Model: bert-base-uncased
+MLP only during training: True
+
+Loading tokenizer...
+
+Loading SimCSE model...
+Loading checkpoint weights...
+Checkpoint weights loaded successfully.
+
+Loading STS-B dataset...
+Number of examples: 1500
+
+First example:
+Sentence 1: A man with a hard hat is dancing.
+Sentence 2: A man wearing a hard hat is dancing.
+Gold score: 5.0
+
+Evaluation representation:
+BERT -> raw CLS
+MLP used during evaluation: False
+
+Running evaluation...
+
+----------------------------------------------------------------------
+STS-B Spearman: 0.410671
+STS-B Spearman (%): 41.07
+----------------------------------------------------------------------
+
+Evaluation complete.

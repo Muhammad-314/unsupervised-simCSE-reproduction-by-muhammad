@@ -1,0 +1,39 @@
+# ============================================================
+# SimCSE Temperature Ablation — 0.10
+# ============================================================
+
+experiment_name: temperature_010_50k
+
+model_name: bert-base-uncased
+
+mlp_only_train: true
+
+dataset_path: data/raw/wiki1m_for_simcse.txt
+
+max_seq_length: 32
+
+batch_size: 64
+
+learning_rate: 3.0e-5
+
+epochs: 1
+
+temperature: 0.01
+
+dropout: 0.1
+
+fixed_dropout_mask: false
+
+max_grad_norm: 1.0
+
+seed: 42
+
+shuffle: true
+
+drop_last: true
+
+num_workers: 0
+
+target_reference:
+  official_model: princeton-nlp/unsup-simcse-bert-base-uncased
+  reported_average_sts: 76.25
