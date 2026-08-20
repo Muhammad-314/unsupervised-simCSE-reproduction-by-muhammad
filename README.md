@@ -1,5 +1,7 @@
 # SimCSE Reproduction: Resource-Constrained Mechanism Study
 
+## YouTube Video: https://youtu.be/BU4PVcbw8Y8
+
 A validated implementation-level reproduction of **unsupervised SimCSE** with
 `bert-base-uncased`, followed by a controlled reduced-data study of training
 scale, dropout, temperature, and representation geometry.
